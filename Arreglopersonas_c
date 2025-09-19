@@ -13,3 +13,8 @@ console.log(buscLuis);
 personas.forEach(persona => {
     console.log(`${persona.nombre}, ${persona.edad}`);
 });
+
+//reduce
+const totaledades = personas.reduce((total, persona) => 
+    {return total + persona.edad;}, 0);
+console.log(`Total de edades: ${totaledades}`);
